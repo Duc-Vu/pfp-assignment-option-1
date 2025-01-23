@@ -1,0 +1,38 @@
+{
+    "0": {
+        "name": "2Bi",
+        "username": "2bi123",
+        "password": "12344",
+        "email_address": "haha@gmail.com",
+        "phone_number": "090708068",
+        "gender": "Male",
+        "role": "Visitor"
+    },
+    "1": {
+        "name": "2ci",
+        "username": "2bi1234",
+        "password": "12344",
+        "email_address": "haha@gmail.com",
+        "phone_number": "090708068",
+        "gender": "Male",
+        "role": "Visitor"
+    },
+    "2": {
+        "name": "Vu Duc",
+        "username": "ducvu",
+        "password": "hello",
+        "email_address": "vuduc@gmail.com",
+        "phone_number": "0968955444",
+        "gender": "male",
+        "role": "Visitor"
+    },
+    "3": {
+        "name": "Vu Duc",
+        "username": "user",
+        "password": "user123",
+        "email_address": "vu@gmail.com",
+        "phone_number": "096877777",
+        "gender": "Male",
+        "role": "Visitor"
+    }
+}
