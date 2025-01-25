@@ -26,6 +26,7 @@ class Visitor(Events, Users):
     def handleMenu(self, option: str):
         menu_handlers = {
             default_menu: self.defaultMenu,
+            change_infomation_menu: self.changeInfoMenu
         }
         handler = menu_handlers.get(self.menu)
         if handler:
@@ -67,7 +68,6 @@ class Visitor(Events, Users):
             case "7":
                 self.flag = False
             case _:
-                os.system("cls")
                 print("Invalid option. Please choose a valid number.")
                 
     def changeInfoMenu(self, option: str):
@@ -90,7 +90,6 @@ class Visitor(Events, Users):
             case "3":
                 self.menu = default_menu
             case _:
-                os.system("cls")
                 print("Invalid option. Please choose a valid number.")
             
                 
