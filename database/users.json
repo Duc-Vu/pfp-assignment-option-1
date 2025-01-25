@@ -1,0 +1,29 @@
+{
+    "0": {
+        "name": "admin",
+        "username": "admin",
+        "password": "123",
+        "email_address": "haha@gmail.com",
+        "phone_number": "090708068",
+        "gender": "Male",
+        "role": "Admin"
+    },
+    "1": {
+        "name": "Amanai",
+        "username": "amanai",
+        "password": "123",
+        "email_address": "amanai@gmail.com",
+        "phone_number": "09070809",
+        "gender": "Female",
+        "role": "EventOrganizer"
+    },
+    "2": {
+        "name": "The Herta",
+        "username": "therta",
+        "password": "123",
+        "email_address": "therta@hsr.com",
+        "phone_number": "0987589975",
+        "gender": "Female",
+        "role": "Visitor"
+    }
+}

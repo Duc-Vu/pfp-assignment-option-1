@@ -1,0 +1,17 @@
+{
+    "0": {
+        "event_name": "test event",
+        "description": "ooo",
+        "attendees": [
+            "2"
+        ],
+        "organizer": [
+            "1"
+        ],
+        "max_attendees": 20,
+        "start_date": "12",
+        "end_date": "23",
+        "address": "123",
+        "status": "SCHEDULED"
+    }
+}

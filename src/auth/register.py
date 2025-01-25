@@ -1,4 +1,4 @@
-from utils.users.users import Users
+from src.utils.users.users import Users
 from typing import Callable
 import os
 
@@ -13,9 +13,17 @@ class Register(Users):
         password = self.getInput("Create Password: ")
         email = self.isUniqueInfo(self.isEmailExist, "Email")
         phone_number = self.isUniqueInfo(self.isPhoneNumberExist, "Phone Number")
-        gender = self.getInput("Enter gender: ")
-        self.addUser(name=name, user_name=username, password=password, email_address=email, phone_number=phone_number, gender=gender, role="Visitor")
-        print("Register successful as a Visitor")
+        while True:
+            gender = self.getInput("Enter gender[Male/Female]: ")
+            match gender:
+                case "Male":
+                    break
+                case "Female":
+                    break
+                case _:
+                    print("Answer should Male or Female")
+        self.addUser(name=name, user_name=username, password=password, email_address=email, phone_number=phone_number, gender=gender, role=self.userRole[1])
+        print(f"Register successful as a {self.userRole[1]}")
         
     def getInput(self, prompt: str) -> str:
         return input(prompt)
