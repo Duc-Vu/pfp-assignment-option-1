@@ -126,7 +126,7 @@ class Admin(Events, Users):
                 print("Invalid option. Please choose a valid number.")
                 
     def updateEventsMenu(self, option: str) -> None:
-        if option in list(map(str, list(range(1, 9)))) and self.event_id == None:
+        if option in list(map(str, list(range(1, 10)))) and self.event_id == None:
             self.event_id = input("Enter event id: ")
             if not self.isEventIdExist(event_id=self.event_id):
                 print("EventID does not exist")
@@ -226,7 +226,7 @@ class Admin(Events, Users):
                  print("Invalid option. Please choose a valid number.")
                  
     def manageUsersMenu(self, option: str) -> None:
-        if option in list(map(str, list(range(2, 3)))) and self.user_id == None:
+        if option in list(map(str, list(range(2, 4)))) and self.user_id == None:
             self.user_id = input("Enter event id: ")
             if not self.isUserIdExist(user_id=self.user_id):
                 print("UserID does not exist")
