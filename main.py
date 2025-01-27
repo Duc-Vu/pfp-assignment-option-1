@@ -27,8 +27,7 @@ if __name__ == "__main__":
                 if status:
                     func = roles[role](user_id)
                     while func.flag:
-                        option = showMenu(menu=func.menu)
-                        func.handleMenu(option=option) 
+                        func.handleMenu(option=showMenu(menu=func.menu)) 
             case "2":
                 os.system("cls")
                 reg = Register()

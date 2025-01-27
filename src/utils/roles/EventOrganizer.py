@@ -36,7 +36,7 @@ class EventOrganizer(Events, Users):
                 if event_id not in self.getEventsOrganizer(user_id=self.account_id):
                     print("You not have access to add user in this event")
                     return
-                user_id = input("Enter user id")
+                user_id = input("Enter user id: ")
                 if self.isUserIdExist(user_id=user_id):
                     if not self.isUserStaff(user_id=user_id):
                         if not self.isUserAttendedEvent(user_id=user_id, event_id=event_id):

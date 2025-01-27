@@ -117,6 +117,7 @@ class Users():
         return self.users_data[user_id]["role"] != self.userRole[1]
     
     def showUserDetails(self, user_id: str):
+        print("UserID:",user_id)
         for user_data in self.users_data[user_id].keys():
             if user_data != "password":
                 print(f"{user_data.title()}: {self.users_data[user_id][user_data]}")
