@@ -1,5 +1,3 @@
-import os
-
 default_menu = (
                 "Search Events", 
                 "Registration Event",

@@ -14,15 +14,12 @@ class Register(Users):
         email = self.isUniqueInfo(self.isEmailExist, "Email")
         phone_number = self.isUniqueInfo(self.isPhoneNumberExist, "Phone Number")
         while True:
-            gender = self.getInput("Enter gender[Male/Female]: ")
-            match gender:
-                case "Male":
-                    break
-                case "Female":
-                    break
-                case _:
-                    print("Answer should Male or Female")
-        self.addUser(name=name, user_name=username, password=password, email_address=email, phone_number=phone_number, gender=gender, role=self.userRole[1])
+            gender = self.getInput("Enter gender[Male/Female/Unknow]: ").lower()
+            if gender in ["male", "female", "unknow"]:
+                break
+            print("Answer should Male, Female or Unknow")
+            
+        self.addUser(name=name, user_name=username, password=password, email_address=email, phone_number=phone_number, gender=gender.title(), role=self.userRole[1])
         print(f"Register successful as a {self.userRole[1]}")
         
     def getInput(self, prompt: str) -> str:
