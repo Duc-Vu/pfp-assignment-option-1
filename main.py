@@ -12,8 +12,8 @@ roles = {
     }
 
 def showMenu(menu: List) -> str:
-    index_menu = [f"{index+1}. {value}" for index, value in enumerate(menu)]
-    option = input(f'{"\n".join(index_menu)}\nChoose the number: ')
+    index_menu = "\n".join([f"{index+1}. {value}" for index, value in enumerate(menu)])
+    option = input(f'{index_menu}\nChoose the number: ')
     return option if option in list(map(str, list(range(1, len(menu)+1)))) else None
 
 if __name__ == "__main__":
