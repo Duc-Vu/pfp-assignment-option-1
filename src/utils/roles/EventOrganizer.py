@@ -6,8 +6,8 @@ default_menu = (
 )
 
 view_events_menu = ("View Event Details", "Exit")
-from src.utils.events.events import Events
-from src.utils.users.users import Users
+from ...utils.events.events import Events
+from ...utils.users.users import Users
 class EventOrganizer(Events, Users):
     def __init__(self, account_user_id):
         super().__init__()

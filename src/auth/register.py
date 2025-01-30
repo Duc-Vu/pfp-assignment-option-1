@@ -1,4 +1,4 @@
-from src.utils.users.users import Users
+from ..utils.users.users import Users
 from typing import Callable
 import os
 

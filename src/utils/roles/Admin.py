@@ -44,8 +44,8 @@ change_role_menu = (
 change_gender_menu = ("Male", "Female", "Unknow", "Exit")
 view_all_events_menu = ("View Event Details", "Exit")
 event_status_menu = ("SCHEDULED", "ONGOING", "COMPLETED", "Exit")
-from src.utils.events.events import Events
-from src.utils.users.users import Users
+from ...utils.events.events import Events
+from ...utils.users.users import Users
 
 class Admin(Events, Users):
     def __init__(self, account_user_id):

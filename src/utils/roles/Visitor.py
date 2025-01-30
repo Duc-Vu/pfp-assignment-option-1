@@ -12,8 +12,8 @@ change_infomation_menu = (
     "Update Password",
     "Exit"
 )
-from src.utils.events.events import Events
-from src.utils.users.users import Users
+from ...utils.events.events import Events
+from ...utils.users.users import Users
 class Visitor(Events, Users):
     def __init__(self, account_user_id):
         super().__init__()

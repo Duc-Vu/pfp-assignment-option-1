@@ -11,5 +11,16 @@
         "end_date": "23",
         "address": "123",
         "status": "SCHEDULED"
+    },
+    "1": {
+        "event_name": "tet holiday",
+        "description": "test",
+        "attendees": [],
+        "organizer": [],
+        "max_attendees": 20,
+        "start_date": "10/2",
+        "end_date": "20/2",
+        "address": "HoChiMinh",
+        "status": "SCHEDULED"
     }
 }

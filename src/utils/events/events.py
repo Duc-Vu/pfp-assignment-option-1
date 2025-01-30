@@ -4,7 +4,7 @@ import json, os
 
 file_path = "database/events.json"
 
-from src.utils.users.users import Users
+from ...utils.users.users import Users
 
 class Events():
     def __init__(self):
@@ -121,7 +121,7 @@ class Events():
         if attendees:
             keys.append("attendees")
         if organizer:
-            key.append("organizer")
+            keys.append("organizer")
             
         for event_id in self.events_data:
             for key in keys:

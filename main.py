@@ -1,6 +1,6 @@
 from src.auth import *
-from typing import List
 from src.utils.roles import *
+from typing import List
 import os
 
 login_menu = ("Login", "Register", "Exit")
