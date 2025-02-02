@@ -22,16 +22,14 @@ if __name__ == "__main__":
         match option:
             case "1":
                 os.system("cls")
-                login = Login()
-                status, role, user_id = login.verify()
+                status, role, user_id = Login().verify()
                 if status:
                     func = roles[role](user_id)
                     while func.flag:
                         func.handleMenu(option=showMenu(menu=func.menu)) 
             case "2":
                 os.system("cls")
-                reg = Register()
-                reg.newUser()
+                Register().newUser()
             case "3":
                 break
             case _:

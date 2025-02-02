@@ -25,5 +25,14 @@
         "phone_number": "0987589975",
         "gender": "Female",
         "role": "Visitor"
+    },
+    "3": {
+        "name": "Hotaru",
+        "username": "hotaru",
+        "password": "123",
+        "email_address": "hotaru@hsr.com",
+        "phone_number": "09897579444",
+        "gender": "Female",
+        "role": "Visitor"
     }
 }
