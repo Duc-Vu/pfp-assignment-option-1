@@ -95,13 +95,13 @@ class Events():
     def showEventDetails(self, event_id: str) -> None:
         events_data = self.events_data[event_id]
         user_data = self.users.users_data
-        print(f"Event Name: {events_data["event_name"]}\nDescription: {events_data["description"]}\nMaximun Attendees: {events_data["max_attendees"]}\nStart Date: {events_data["start_date"]}\nEnd Date: {events_data["end_date"]}\nAddress: {events_data["address"]}\nStatus: {events_data["status"]}")
+        print(f'Event Name: {events_data["event_name"]}\nDescription: {events_data["description"]}\nMaximun Attendees: {events_data["max_attendees"]}\nStart Date: {events_data["start_date"]}\nEnd Date: {events_data["end_date"]}\nAddress: {events_data["address"]}\nStatus: {events_data["status"]}')
         row = [[user_id, user_data[user_id]["username"], user_data[user_id]["role"], user_data[user_id]["email_address"], user_data[user_id]["phone_number"], user_data[user_id]["gender"]] for user_id in events_data["attendees"]]
         headers = ["UserID", "Username", "Role", "Email Address", "Phone Number", "Gender"]
-        print(f"Attendees:\n{tabulate(row, headers=headers, tablefmt="grid", colalign=["center"]*len(headers) if len(row) > 0 else None)}")
+        print(f'Attendees:\n{tabulate(row, headers=headers, tablefmt="grid", colalign=["center"]*len(headers) if len(row) > 0 else None)}')
         row = [[user_id, user_data[user_id]["username"], user_data[user_id]["role"], user_data[user_id]["email_address"], user_data[user_id]["phone_number"], user_data[user_id]["gender"]] for user_id in events_data["organizer"]]
         headers = ["UserID", "Username", "Role", "Email Address", "Phone Number", "Gender"]
-        print(f"Organizer:\n{tabulate(row, headers=headers, tablefmt="grid", colalign=["center"]*len(headers) if len(row) > 0 else None)}")
+        print(f'Organizer:\n{tabulate(row, headers=headers, tablefmt="grid", colalign=["center"]*len(headers) if len(row) > 0 else None)}')
 
     # Kiểm tra user có phải là Event Organizer
     def isUserIdOrganizer(self, user_id: str, in_event_id = None) -> bool:
